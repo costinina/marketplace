@@ -1,0 +1,25 @@
+// Font aswome path
+$fa-font-path: "../webfonts";
+
+// Colors
+$light: #FFFFFF;
+$grey: #B3C3D4;
+$dark-grey: #243143;
+$primary-color: #66BB6A;
+$secondary-color: #EDB62B;
+$body-background-color: $light;
+$body-color: $dark-grey;
+$input-border-color: $grey;
+$link-color: $dark-grey;
+
+// Spacing
+$base-space: 15px;
+$base-font-size: 16px;
+$border-radius: 3px;
+
+// Responsive breakpoints
+$size-xs: 640px !default;
+$size-sm: 812px !default;
+$size-md: 1024px !default;
+$size-lg: 1280px !default;
+$size-xl: 1440px !default;

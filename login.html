@@ -2,15 +2,31 @@
 <html>
 
 <head>
-	<title>MarketPlace</title>
+	<title>MarketPlace - Login</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="src/scss/app.css">
 </head>
 
 <body>
     <div class="container">
-        <p>Login page</p>
+        <form id="login-form">
+            <fieldset>
+              <legend>Login</legend>
+              <div class="field">
+                <label>Email</label>
+                <input id="email" type="email" placeholder="Email" />
+              </div>
+              <div class="field">
+                <label>Password</label>
+                <input id="password" type="password" placeholder="Password" />
+              </div>
+              <div class="field">
+                <button id="signup" class="btn">Sign Up</button>
+              </div>
+            </fieldset>
+          </form>
     </div>
+    <script src="/src/js/login.js"></script>
 </body>
 
 </html>

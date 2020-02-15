@@ -2,15 +2,92 @@
 <html>
 
 <head>
-	<title>MarketPlace</title>
+    <title>MarketPlace</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="src/scss/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/solid.min.css">
+    <link rel="stylesheet" href="src/css/app.css">
 </head>
 
 <body>
+    <header class="page-header">
+        <div class="container">
+            <a class="brand" href="/">Logo</a>
+            <div class="header-actions">
+                <a href="#"><i class="fas fa-shopping-cart"></i>Your cart</a>
+                <a href="#"><i class="fas fa-user"></i>Register</a>
+                <a href="#"><i class="fas fa-sign-in-alt"></i>Login</a>
+            </div>
+        </div>
+    </header>
+    <nav class="page-navigation">
+        <div class="container">
+            <ul class="menu">
+                <li><a href="#">Category</a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">Category</a></li>
+            </ul>
+        </div>
+    </nav>
     <div class="container">
-        <p>Index page</p>
+        <ul class="watches-list"></ul>
     </div>
+    <section class="product-banner">
+        <div class="container text-center">
+            <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>Lorem ipsum dolor sit amet consectetur.</h2>
+            <a href="#" class="btn-secondary">More</a>
+        </div>
+    </section>
+    <section class="cta-banner">
+        <div class="container">
+            <div class="columns v-align-center">
+                <div class="column col-8">
+                    <h3>Sign up to get the latest offers</h3>
+                </div>
+                <div class="column col-4 text-right">
+                    <a class="btn-primary" href="#">Sign up</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <a class="footer-logo" href="/">footer logo</a>
+                    <p>&copy; 2020 MarketPlace<p>
+                </div>
+                <div class="column">
+                    <h6 class="footer-title">About</h6>
+                    <ul>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h6 class="footer-title">Help</h6>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h6 class="footer-title">Connect</h6>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/src/js/index.js"></script>
 </body>
 
 </html>

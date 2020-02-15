@@ -1,0 +1,28 @@
+.page-header {
+  background-color: $dark-grey;
+  padding-top: $base-space * 2;
+  padding-bottom: $base-space * 2;
+  &,
+  a {
+    color: $grey;
+    text-decoration: none;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-actions {
+    a {
+      display: inline-block;
+      &:hover {
+        color: $light;
+      }
+      + a {
+        margin-left: $base-space*2;
+      }
+    }
+    i {
+      margin-right: $base-space/2;
+    }
+  }
+}

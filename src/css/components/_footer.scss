@@ -1,0 +1,23 @@
+.page-footer {
+  background-color: $light;
+  padding-top: $base-space * 2;
+  padding-bottom: $base-space * 2;
+  .footer-logo {
+      margin-bottom: $base-space;
+      display: block;
+  }
+  .footer-title {
+    color: $grey;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  ul {
+    list-style: none;
+    li:not(:last-child) {
+      margin-bottom: $base-space/2;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}

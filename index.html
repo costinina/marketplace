@@ -5,6 +5,7 @@
     <title>MarketPlace</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/solid.min.css">
+    <link rel="stylesheet" href="src/js/vendors/tiny-slider/tiny-slider.css">
     <link rel="stylesheet" href="src/css/app.css">
 </head>
 
@@ -32,17 +33,120 @@
     <div class="container">
         <ul class="watches-list"></ul>
     </div>
-    <section class="product-banner">
+    <section class="banner" style="background-image: url('src/images/products/watch-banner1.jpeg')">
         <div class="container text-center">
-            <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>Lorem ipsum dolor sit amet consectetur.</h2>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+            <div class="search-widget">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                <div class="columns form-group h-align-center">
+                    <div class="column col-6">
+                        <input type="search" class="form-control" id="searchInput" placeholder="Start your search...">
+                    </div>
+                    <div class="column col-auto">
+                        <button type="submit" class="btn-primary">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h4 class="section-title">Section title</h4>
+            <h5 class="section-subtitle">Lorem ipsum dolor sit amet, adipisicing elit</h5>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="src/images/story-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="src/images/story-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="src/images/story-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="src/images/story-1.jpg" alt="">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="banner product-banner" style="background-image: url('src/images/products/watch-banner2.jpeg')">
+        <div class="container text-center">
+            <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>Lorem ipsum dolor sit amet consectetur.
+            </h2>
             <a href="#" class="btn-secondary">More</a>
+        </div>
+    </section>
+    <section class="related-stories">
+        <div class="container">
+            <h4 class="section-title">Related stories</h4>
+            <h5 class="section-subtitle">Lorem ipsum dolor sit amet, adipisicing elit</h5>
+            <div class="columns">
+                <div class="column col-3">
+                    <a href="#" class="story-image"><img src="src/images/story-1.jpg" alt=""></a>
+                    <a href="#">
+                        <h6>Heading for related story will display here</h6>
+                    </a>
+                </div>
+                <div class="column col-3">
+                    <a href="#" class="story-image"><img src="src/images/story-2.jpg" alt=""></a>
+                    <a href="#">
+                        <h6>Heading for related story will display here</h6>
+                    </a>
+                </div>
+                <div class="column col-3">
+                    <a href="#" class="story-image"><img src="src/images/story-3.jpg" alt=""></a>
+                    <a href="#">
+                        <h6>Heading for related story will display here</h6>
+                    </a>
+                </div>
+                <div class="column col-3">
+                    <a href="#" class="story-image"><img src="src/images/story-4.jpg" alt=""></a>
+                    <a href="#">
+                        <h6>Heading for related story will display here</h6>
+                    </a>
+                </div>
+                <div class="column col-3">
+                    <a href="#" class="story-image"><img src="src/images/story-4.jpg" alt=""></a>
+                    <a href="#">
+                        <h6>Heading for related story will display here</h6>
+                    </a>
+                </div>
+                <div class="column col-3">
+                    <a href="#" class="story-image"><img src="src/images/story-3.jpg" alt=""></a>
+                    <a href="#">
+                        <h6>Heading for related story will display here</h6>
+                    </a>
+                </div>
+                <div class="column col-3">
+                    <a href="#" class="story-image"><img src="src/images/story-2.jpg" alt=""></a>
+                    <a href="#">
+                        <h6>Heading for related story will display here</h6>
+                    </a>
+                </div>
+                <div class="column col-3">
+                    <a href="#" class="story-image"><img src="src/images/story-1.jpg" alt=""></a>
+                    <a href="#">
+                        <h6>Heading for related story will display here</h6>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
     <section class="cta-banner">
         <div class="container">
             <div class="columns v-align-center">
                 <div class="column col-8">
-                    <h3>Sign up to get the latest offers</h3>
+                    <h4>Sign up to get the latest offers</h4>
                 </div>
                 <div class="column col-4 text-right">
                     <a class="btn-primary" href="#">Sign up</a>
@@ -87,6 +191,7 @@
             </div>
         </div>
     </footer>
+    <script src="/src/js/vendors/tiny-slider/tiny-slider.js"></script>
     <script src="/src/js/index.js"></script>
 </body>
 

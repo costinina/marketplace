@@ -21,6 +21,26 @@ a {
     color: $grey;
   }
 }
+section {
+  padding-top: $base-space * 3;
+  padding-bottom: $base-space * 3;
+  background-color: $light;
+}
+.card {
+  background-color: $light;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  border-radius: $border-radius;
+  overflow: hidden;
+}
+
+%icon {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+}
 
 // Helpers
 .text-right {
@@ -30,8 +50,8 @@ a {
   text-align: left;
 }
 .text-center {
-    text-align: center;
-  }
+  text-align: center;
+}
 // Typography
 h1,
 h2,
@@ -59,6 +79,16 @@ h5 {
 h6 {
   font-size: 18px;
 }
+.section-title,
+.section-subtitle {
+  text-align: center;
+}
+.section-title {
+  text-transform: uppercase;
+}
+.section-subtitle {
+  color: $grey;
+}
 // Spacing
 p:not(:last-child),
 h3:not(:last-child),
@@ -67,6 +97,39 @@ h5:not(:last-child),
 h6:not(:last-child) {
   margin-bottom: $base-space;
 }
-h1:not(:last-child), h2:not(:last-child){
-    margin-bottom: $base-space * 2;
+h1:not(:last-child),
+h2:not(:last-child) {
+  margin-bottom: $base-space * 2;
+}
+
+// Overight tiny-slider style
+.tns-outer {
+  position: relative;
+}
+.tns-controls button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background-color: rgba($dark-grey, 0.8);
+  border: 0;
+  padding: $base-space;
+  &:before {
+    font-size: 20px;
+    color: $light;
+  }
+
+  @extend %icon;
+  &[data-controls="prev"] {
+    left: 0;
+    &:before {
+      content: "\f060";
+    }
+  }
+  &[data-controls="next"] {
+    right: 0;
+    &:before {
+      content: "\f061";
+    }
+  }
 }

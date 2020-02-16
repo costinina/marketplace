@@ -1,0 +1,24 @@
+.form-group {
+    text-align: left;
+    &:not(:last-child){
+        margin-bottom: $base-space;
+    }
+    input:not([type="submit"]) {
+        background-color: $light;
+        padding: $base-space;
+        border: 1px solid $grey;
+        width: 100%;
+        border-radius: $border-radius;
+        font-size: 14px;
+        height: $controler-height;
+        &:focus {
+            border-color: $primary-color;
+            outline: 0;
+        }
+    }
+    label {
+        display: block;
+        margin-bottom: $base-space/2;
+        font-size: 14px;
+    }
+}

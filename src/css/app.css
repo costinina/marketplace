@@ -137,6 +137,11 @@ table {
   border-spacing: 0;
 }
 
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
 .show-xs,
 .show-sm,
 .show-md,
@@ -648,6 +653,29 @@ a:hover {
   color: #B3C3D4;
 }
 
+section {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  background-color: #FFFFFF;
+}
+
+.card {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.tns-controls button {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+}
+
 .text-right {
   text-align: right;
 }
@@ -693,6 +721,19 @@ h6 {
   font-size: 18px;
 }
 
+.section-title,
+.section-subtitle {
+  text-align: center;
+}
+
+.section-title {
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  color: #B3C3D4;
+}
+
 p:not(:last-child),
 h3:not(:last-child),
 h4:not(:last-child),
@@ -701,8 +742,45 @@ h6:not(:last-child) {
   margin-bottom: 15px;
 }
 
-h1:not(:last-child), h2:not(:last-child) {
+h1:not(:last-child),
+h2:not(:last-child) {
   margin-bottom: 30px;
+}
+
+.tns-outer {
+  position: relative;
+}
+
+.tns-controls button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1;
+  background-color: rgba(36, 49, 67, 0.8);
+  border: 0;
+  padding: 15px;
+}
+
+.tns-controls button:before {
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.tns-controls button[data-controls="prev"] {
+  left: 0;
+}
+
+.tns-controls button[data-controls="prev"]:before {
+  content: "\f060";
+}
+
+.tns-controls button[data-controls="next"] {
+  right: 0;
+}
+
+.tns-controls button[data-controls="next"]:before {
+  content: "\f061";
 }
 
 .btn-primary, .btn-secondary {
@@ -718,6 +796,8 @@ h1:not(:last-child), h2:not(:last-child) {
   color: #FFFFFF;
   min-width: 200px;
   text-align: center;
+  height: 50px;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -726,8 +806,8 @@ h1:not(:last-child), h2:not(:last-child) {
 }
 
 .btn-primary:hover {
-  background-color: transparent;
-  border-color: #66BB6A;
+  background-color: #3a813d;
+  color: #FFFFFF;
 }
 
 .btn-secondary {
@@ -737,6 +817,7 @@ h1:not(:last-child), h2:not(:last-child) {
 
 .btn-secondary:hover {
   background-color: #EDB62B;
+  color: #FFFFFF;
 }
 
 .page-header {
@@ -800,26 +881,18 @@ h1:not(:last-child), h2:not(:last-child) {
   margin-left: 30px;
 }
 
-.cta-banner {
-  background-color: #243143;
-  color: #FFFFFF;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.product-banner {
-  background-image: url("../images/products/watch-banner2.jpeg");
-  padding-top: 60px;
-  padding-bottom: 60px;
+.banner {
+  padding-top: 6vw;
+  padding-bottom: 6vw;
   background-position: center;
   background-size: cover;
   color: #FFFFFF;
   position: relative;
 }
 
-.product-banner:after {
+.banner:after {
   content: "";
-  background-color: rgba(36, 49, 67, 0.8);
+  background-color: rgba(36, 49, 67, 0.5);
   position: absolute;
   top: 0;
   left: 0;
@@ -827,9 +900,79 @@ h1:not(:last-child), h2:not(:last-child) {
   height: 100%;
 }
 
-.product-banner .container {
+.banner .container {
   position: relative;
   z-index: 1;
+}
+
+.banner .search-widget {
+  margin-top: 5vw;
+}
+
+.product-banner {
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+}
+
+.product-banner:after {
+  background-color: rgba(36, 49, 67, 0.8);
+}
+
+.cta-banner {
+  background-color: #243143;
+  color: #FFFFFF;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.related-stories {
+  background-color: #f6f9fb;
+}
+
+.related-stories .column {
+  padding-top: 30px;
+}
+
+.related-stories .story-image {
+  display: block;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 7.5px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+.related-stories a {
+  text-decoration: none;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.form-group input:not([type="submit"]) {
+  background-color: #FFFFFF;
+  padding: 15px;
+  border: 1px solid #B3C3D4;
+  width: 100%;
+  border-radius: 3px;
+  font-size: 14px;
+  height: 50px;
+}
+
+.form-group input:not([type="submit"]):focus {
+  border-color: #66BB6A;
+  outline: 0;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 7.5px;
+  font-size: 14px;
 }
 
 .page-footer {

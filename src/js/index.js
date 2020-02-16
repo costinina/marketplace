@@ -1,3 +1,12 @@
+
+var slider = tns({
+  container: '.carousel',
+  items: 3,
+  gutter: '15',
+  nav: false,
+  controlsText: ['','']
+});
+
 const serverUrl = "http://localhost:3000";
 var loginToken = localStorage.getItem("loginToken");
 if (!loginToken) {

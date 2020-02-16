@@ -10,6 +10,8 @@
   color: $light;
   min-width: 200px;
   text-align: center;
+  height: $controler-height;
+  cursor: pointer;
 }
 .btn-primary {
   background-color: $primary-color;
@@ -17,8 +19,8 @@
   @extend %btn;
 
   &:hover {
-    background-color: transparent;
-    border-color: $primary-color;
+    background-color: darken($primary-color, 20%);
+    color: $light;
   }
 }
 .btn-secondary {
@@ -28,5 +30,6 @@
 
   &:hover {
     background-color: $secondary-color;
+    color: $light;
   }
 }

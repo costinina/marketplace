@@ -1,4 +1,6 @@
-function newElement(tag, content = "", attributes = {}) {
+export const serverUrl = "http://localhost:3000";
+
+export function newElement(tag, content = "", attributes = {}) {
   if (typeof tag === 'undefined') {
     return document.createElement("div");
   }

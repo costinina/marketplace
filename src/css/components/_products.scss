@@ -1,0 +1,20 @@
+
+.product-details {
+  padding: $base-space;
+  > a {
+    display: block;
+    text-decoration: none;
+  }
+  .name {
+    margin-bottom: 0;
+  }
+  .price {
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+.product-image {
+    max-height: 180px;
+    object-fit: cover;
+    width: 100%;
+}

@@ -1,8 +1,11 @@
-const serverUrl = "http://localhost:3000";
+require('../css/app.scss');
+import {serverUrl} from './helpers'
+
 var loginToken = localStorage.getItem("loginToken");
 if (loginToken) {
   window.location.href = "/";
 }
+
 function login(e) {
   e.preventDefault();
   var email = document.getElementById("email").value;

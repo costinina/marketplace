@@ -1,4 +1,4 @@
-require('../css/app.scss');
+require('../css/main.scss');
 import {serverUrl} from './helpers'
 
 var loginToken = localStorage.getItem("loginToken");

@@ -57,14 +57,7 @@
 .column {
   flex: 1;
   max-width: 100%;
-  padding-left: $base-space;
-  padding-right: $base-space;
-
-  &:not(:last-child) {
-    @media (max-width: $size-xs) {
-      margin-bottom: $base-space;
-    }
-  }
+  padding: $base-space;
 
   &.col-12,
   &.col-11,

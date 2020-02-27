@@ -3,8 +3,8 @@
 
 <head>
     <title>MarketPlace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/solid.min.css">
 </head>
 
 <body>
@@ -14,26 +14,22 @@
             <div class="header-actions">
                 <a href="#"><i class="fas fa-shopping-cart"></i>Your cart</a>
                 <a href="#"><i class="fas fa-user"></i>Register</a>
-                <a href="#"><i class="fas fa-sign-in-alt"></i>Login</a>
+                <a class="login" href="/login.html"><i class="fas fa-sign-in-alt"></i>Login</a>
+                <a class="logout" href="#"><i class="fas fa-sign-in-alt"></i>Logout</a>
             </div>
         </div>
     </header>
     <nav class="page-navigation">
         <div class="container">
             <ul class="menu">
-                <li><a href="#">Category</a></li>
-                <li><a href="#">Category</a></li>
-                <li><a href="#">Category</a></li>
-                <li><a href="#">Category</a></li>
+                <li class="active"><a href="/">Homepage</a></li>
+                <li><a href="/products.html">Products</a></li>
             </ul>
         </div>
     </nav>
-    <div class="container">
-        <ul class="watches-list"></ul>
-    </div>
-    <section class="banner" style="background-image: url('src/images/products/watch-banner1.jpeg')">
+    
+    <section class="banner" style="background-image: url('src/images/banner1.jpeg')">
         <div class="container text-center">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
             <div class="search-widget">
                 <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
                 <div class="columns form-group h-align-center">
@@ -77,7 +73,7 @@
             </div>
         </div>
     </section>
-    <section class="banner product-banner" style="background-image: url('src/images/products/watch-banner2.jpeg')">
+    <section class="banner product-banner" style="background-image: url('src/images/banner2.jpeg')">
         <div class="container text-center">
             <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>Lorem ipsum dolor sit amet consectetur.
             </h2>

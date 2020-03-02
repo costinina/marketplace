@@ -1,5 +1,5 @@
 require('../css/main.scss');
-
+import Cart from './shopping-cart'
 
 var loginToken = localStorage.getItem("loginToken");
 if (loginToken) {
@@ -14,3 +14,6 @@ document.querySelector('.logout').addEventListener('click', function(e){
   localStorage.removeItem('loginToken');
   window.location.reload();
 })
+
+window.cart = new Cart()
+window.cart.init()

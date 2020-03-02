@@ -1,4 +1,3 @@
-
 import { serverUrl, newElement } from './helpers'
 
 function getProducts() {
@@ -30,9 +29,15 @@ function createProduct(item) {
   var productActions = newElement("div", null, {class: "product-actions"});
   var more = newElement("a", 'View details', {href: item.image, class: "btn-secondary more" });
   productActions.appendChild(more);
-  var addCart = newElement("a", 'Add to cart', {href: '#', class: "btn-primary addCart" });
-  productActions.appendChild(addCart);
+  var addToCart = newElement("a", 'Add to cart', {href: '#', class: "btn-primary addToCart" });
+  productActions.appendChild(addToCart);
   productContainer.appendChild(productActions);
+  
+  // add item to cart
+  addToCart.addEventListener("click", function (e) {
+    e.preventDefault()
+    window.cart.addItem(item)
+  });
 
 
   product.appendChild(productContainer);

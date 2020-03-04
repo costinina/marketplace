@@ -1,4 +1,4 @@
-import { serverUrl, newElement } from './helpers'
+import { serverUrl, newElement, formatCurrency } from './helpers'
 
 function getProducts() {
   var loginToken = localStorage.getItem("loginToken");
@@ -22,12 +22,12 @@ function createProduct(item) {
   productContainer.appendChild(image);
   var name = newElement("h4", item.name, { class: "name"});
   productContainer.appendChild(name);
-  var price = newElement("p", item.price, { class: "price" });
+  var price = newElement("p", formatCurrency(item.price), { class: "price" });
   productContainer.appendChild(price);
 
   // Product Actions
   var productActions = newElement("div", null, {class: "product-actions"});
-  var more = newElement("a", 'View details', {href: item.image, class: "btn-secondary more" });
+  var more = newElement("a", 'View details', {href: `/product-details.html?productID=${item.id}`, class: "btn-secondary more" });
   productActions.appendChild(more);
   var addToCart = newElement("a", 'Add to cart', {href: '#', class: "btn-primary addToCart" });
   productActions.appendChild(addToCart);

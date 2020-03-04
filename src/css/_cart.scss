@@ -46,6 +46,11 @@
     margin-bottom: 0;
     font-weight: bold;
     flex: 1;
+    small {
+      display: block;
+      font-weight: normal;
+      font-size: 65%;
+    }
   }
   .quantity {
     margin-right: $base-space * 2;

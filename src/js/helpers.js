@@ -1,5 +1,6 @@
 export const serverUrl = "http://localhost:3000";
 
+// Creates new elements
 export function newElement(tag, content = "", attributes = {}) {
   if (typeof tag === 'undefined') {
     return document.createElement("div");
@@ -22,4 +23,15 @@ export function newElement(tag, content = "", attributes = {}) {
   }
 
   return element;
+}
+
+// Format a number as a currency
+export function formatCurrency(value) {
+  return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(value)
+}
+
+// Create words from a camel case string
+export function camelCaseToWords(camelCase) {
+  var result = camelCase.replace( /([A-Z])/g, " $1" );
+  return result.charAt(0).toUpperCase() + result.slice(1).trim()
 }

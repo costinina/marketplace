@@ -35,3 +35,15 @@ export function camelCaseToWords(camelCase) {
   var result = camelCase.replace( /([A-Z])/g, " $1" );
   return result.charAt(0).toUpperCase() + result.slice(1).trim()
 }
+
+// Get the value of a key in the query string
+export function getQueryString(key) {
+  var pieces = document.location.search.replace('?', '').split('&')
+  for (var i = 0; i < pieces.length; i++) {
+    if (pieces[i].indexOf(`${key}=`) === 0) {
+      return pieces[i].replace(`${key}=`, '')
+    }
+  }
+
+  return null;
+}

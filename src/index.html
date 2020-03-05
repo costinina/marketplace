@@ -29,29 +29,32 @@
         </div>
     </nav>
     <section class="search-widget has-background">
-            <div class="container">
-              <div class="columns form-group h-align-center">
+        <div class="container">
+            <div class="columns form-group h-align-center">
                 <div class="column col-6">
-                  <input type="search" class="form-control" id="searchInput" placeholder="Start your search...">
+                    <input type="search" class="form-control" id="searchInput" placeholder="Start your search...">
                 </div>
                 <div class="column col-auto">
-                  <button type="submit" class="btn-primary">Search</button>
+                    <button type="submit" class="btn-primary">Search</button>
                 </div>
-              </div>
             </div>
-          </section>
+        </div>
+    </section>
     <section class="banner" style="background-image: url('src/images/banner1.jpeg')">
         <div class="container text-center">
             <div class="search-widget">
                 <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-                <div class="columns form-group h-align-center">
-                    <div class="column col-6">
-                        <input type="search" class="form-control" id="searchInput" placeholder="Start your search...">
+                <form method="GET" action="/products.html">
+                    <div class="columns form-group h-align-center">
+                        <div class="column col-6">
+                            <input type="search" name="q" class="form-control" id="searchInput"
+                                placeholder="Start your search...">
+                        </div>
+                        <div class="column col-auto">
+                            <button type="submit" class="btn-primary">Search</button>
+                        </div>
                     </div>
-                    <div class="column col-auto">
-                        <button type="submit" class="btn-primary">Search</button>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
     </section>
@@ -59,30 +62,7 @@
         <div class="container">
             <h4 class="section-title">Section title</h4>
             <h5 class="section-subtitle">Lorem ipsum dolor sit amet, adipisicing elit</h5>
-            <div class="carousel">
-                <div class="carousel-item">
-                    <div class="card">
-                        <img src="src/images/story-1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <img src="src/images/story-1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <img src="src/images/story-1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <img src="src/images/story-1.jpg" alt="">
-                    </div>
-                </div>
-
-
-            </div>
+            <div class="carousel"></div>
         </div>
     </section>
     <section class="banner product-banner" style="background-image: url('src/images/banner2.jpeg')">

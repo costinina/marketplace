@@ -25,13 +25,13 @@ export default function () {
   }
 
   // Add a new item to cart or increase quantity
-  function addItem(item) {
+  function addItem(item, quantity = 1) {
     let existing = getItem(item.id)
     
     if (existing) {
-      existing.quantity++
+      existing.quantity += quantity
     } else {
-      item.quantity = 1
+      item.quantity = quantity
       items.push(item)
     }
     sessionStorage.setItem('cart', JSON.stringify(items))

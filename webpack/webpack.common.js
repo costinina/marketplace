@@ -1,5 +1,5 @@
 const Path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -36,19 +36,23 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'products.html',
-      chunks: ['main','products'],
+      chunks: ['main', 'products'],
       template: Path.resolve(__dirname, '../src/products.html')
     }),
     new HtmlWebpackPlugin({
       filename: 'product-details.html',
-      chunks: ['main','productDetails'],
+      chunks: ['main', 'productDetails'],
       template: Path.resolve(__dirname, '../src/product-details.html')
     }),
     new HtmlWebpackPlugin({
       filename: 'cart.html',
-      chunks: ['main','cart'],
+      chunks: ['main', 'cart'],
       template: Path.resolve(__dirname, '../src/cart.html')
     }),
+    new CopyWebpackPlugin([{
+      from: Path.resolve(__dirname, '../src/images'),
+      to: Path.resolve(__dirname, '../build/src/images'),
+    }])
   ],
   resolve: {
     alias: {

@@ -1,0 +1,30 @@
+{
+  "name": "simple-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chance": "^1.0.18",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "description": "## Instalation",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malexsan1/simple-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/malexsan1/simple-server/issues"
+  },
+  "homepage": "https://github.com/malexsan1/simple-server#readme"
+}

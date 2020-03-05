@@ -21,14 +21,13 @@
   background-color: $light;
   padding: $base-space * 2;
   margin: $base-space * 2 0;
-
 }
 
 .cart-item {
   display: flex;
   align-items: center;
- 
-  &:not(:last-child){
+
+  &:not(:last-child) {
     border-bottom: 1px solid $grey;
     padding-bottom: $base-space;
     margin-bottom: $base-space;
@@ -57,6 +56,12 @@
   }
   .delete {
     color: red;
+    font-weight: bold;
+  }
+}
+.cart-total {
+  text-align: right;
+  h4 {
     font-weight: bold;
   }
 }

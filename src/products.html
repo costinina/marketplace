@@ -10,9 +10,10 @@
 <body>
   <header class="page-header">
     <div class="container">
-      <a class="brand" href="/">Logo</a>
+      <a class="brand" href="/"><img src="src/images/clock.png"></a>
       <div class="header-actions">
-        <a class="cart-icon" href="/cart.html"><i class="fas fa-shopping-cart"></i><span class="total-count">0</span>Your cart</a>
+        <a class="cart-icon" href="/cart.html"><i class="fas fa-shopping-cart"></i><span
+            class="total-count">0</span>Your cart</a>
         <a href="#"><i class="fas fa-user"></i>Register</a>
         <a class="login" href="/login.html"><i class="fas fa-sign-in-alt"></i>Login</a>
         <a class="logout" href="#"><i class="fas fa-sign-in-alt"></i>Logout</a>
@@ -27,21 +28,44 @@
       </ul>
     </div>
   </nav>
+
+  <section class="search-widget has-background">
+    <div class="container">
+      <div class="columns form-group h-align-center">
+        <div class="column col-6">
+          <input type="search" class="form-control" id="searchInput" placeholder="Start your search...">
+        </div>
+        <div class="column col-auto">
+          <button type="submit" class="btn-primary">Search</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <div class="container">
-    <div class="products-list columns"></div>
+    <div class="columns">
+      <div class="column col-3">
+        <div class="sidebar filter">
+          <h5 class="sidebar-title">Filter</h5>
+        </div>
+      </div>
+      <div class="column col-9">
+        <div class="products-list columns"></div>
+      </div>
+    </div>
   </div>
   <section class="cta-banner">
     <div class="container">
-        <div class="columns v-align-center">
-            <div class="column col-8">
-                <h4>Sign up to get the latest offers</h4>
-            </div>
-            <div class="column col-4 text-right">
-                <a class="btn-primary" href="#">Sign up</a>
-            </div>
+      <div class="columns v-align-center">
+        <div class="column col-8">
+          <h4>Subscribe to the newsletter and stay up to date with our new offers!</h4>
         </div>
+        <div class="column col-4 text-right">
+          <a class="btn-primary" href="#">Subscribe</a>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
   <footer class="page-footer">
     <div class="container">
       <div class="columns">

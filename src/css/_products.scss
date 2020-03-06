@@ -40,6 +40,9 @@
     width: 100%;
     transition: filter 0.3s ease-in-out;
     filter: blur(0);
+    @media (max-width: $size-xs) {
+      height: 30vh;
+    }
   }
   .name,
   .price {
@@ -67,6 +70,9 @@
     flex-direction: column;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    @media (max-width: $size-xs) {
+      height: 30vh;
+    }
     &:after {
       content: "";
       background-color: rgba($dark-grey, 0.8);

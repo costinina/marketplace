@@ -3,6 +3,9 @@
   padding-top: $base-space * 2;
   padding-bottom: $base-space * 2;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+  @media (max-width: $size-xs) {
+    text-align: center;
+  }
   a {
     text-decoration: none;
     &:hover {

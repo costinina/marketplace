@@ -18,10 +18,16 @@ function getCarouselProducts() {
 
       var slider = tns({
         container: '.carousel',
-        items: 4,
+        items: 1,
         gutter: '15',
         nav: false,
-        controlsText: ['', '']
+        controlsText: ['', ''],
+        responsive: {
+          640: {
+            gutter: 15,
+            items: 4
+          }
+        }
       });
     });
 }

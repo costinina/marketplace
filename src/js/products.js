@@ -27,7 +27,7 @@ function getProducts() {
 }
 
 function createProduct(item) {
-  var product = newElement("div", null, { class: "column col-4" });
+  var product = newElement("div", null, { class: "column col-4 col-xs-12" });
   var productContainer = newElement("div", null, { class: "card" });
 
   // Product Image, name and Price

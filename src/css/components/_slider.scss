@@ -7,6 +7,9 @@
     object-fit: cover;
     width: 100%;
     @extend %imageAnim;
+    @media (max-width: $size-xs) {
+      height: 30vh;
+    }
   }
 }
 

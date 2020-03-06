@@ -10,11 +10,21 @@
 
   .brand {
     max-width: 40px;
+    @media (max-width: $size-xs) {
+      display: block;
+      margin-bottom: $base-space;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: $size-xs) {
+      display: block;
+      text-align: center;
+    }
   }
   .header-actions {
     a {

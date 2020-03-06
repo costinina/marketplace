@@ -12,7 +12,7 @@ var activeFilters = {
 
 function getProducts() {
   var loginToken = localStorage.getItem("loginToken");
-  fetch(`${serverUrl}/api/watches`, {
+  fetch(`${serverUrl}/api/products`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",

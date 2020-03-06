@@ -80,9 +80,9 @@ response: {
 }
 ```
 
-## Watches
+## products
 
-### **GET @ /api/watches** -> list of watches
+### **GET @ /api/products** -> list of products
 
 ```js
 response: [
@@ -117,11 +117,11 @@ response: [
       braceletColor: "black"
     }
   },
-  ...otherWatches
+  ...otherproducts
 ]
 ```
 
-### **GET @ /api/watches/:watchId** -> details of a single watch
+### **GET @ /api/products/:watchId** -> details of a single watch
 
 ```js
 response: {

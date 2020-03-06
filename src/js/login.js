@@ -1,5 +1,5 @@
 require('../css/main.scss');
-import {serverUrl} from './helpers'
+import { serverUrl } from './helpers'
 
 var loginToken = localStorage.getItem("loginToken");
 if (loginToken) {

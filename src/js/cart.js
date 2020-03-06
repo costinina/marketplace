@@ -3,15 +3,15 @@ import { newElement, formatCurrency } from "./helpers"
 // Create an item in the cart
 function createItems(item) {
   var cartItem = newElement("div", null, { class: "cart-item" });
-  
+
   // Image
   var image = newElement("img", null, { src: item.thumbnail });
   cartItem.appendChild(image);
-  
+
   // Name
   var name = newElement("h5", item.name, { class: "name" });
   cartItem.appendChild(name);
-  
+
   // Price
   var price = newElement("h4", `<small>Price</small>${formatCurrency(item.price)}`, { class: "price" });
   cartItem.appendChild(price);
@@ -19,7 +19,7 @@ function createItems(item) {
   // Subtotal
   var subtotal = newElement("h4", `<small>Subtotal</small>${formatCurrency(item.price * item.quantity)}`, { class: "price" });
   cartItem.appendChild(subtotal);
-  
+
   // Quantity
   var quantity = newElement("select", item.price, { class: "quantity" });
   cartItem.appendChild(quantity);
@@ -57,7 +57,7 @@ function renderCart(items) {
       cartList.appendChild(item);
     }
 
-    var cartTotal = newElement("div", null, {classList: "cart-total"});
+    var cartTotal = newElement("div", null, { classList: "cart-total" });
     var title = newElement("h4", "Total: " + formatCurrency(window.cart.getTotal()))
     cartTotal.appendChild(title)
     cartList.appendChild(cartTotal)

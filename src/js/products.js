@@ -135,12 +135,12 @@ function generateFiltersHtml(brands, models, genders) {
   let filters = document.querySelector('.sidebar.filter .available-filters');
   filters.innerHTML = '';
   filters.appendChild(generateFiltersSection(brands, 'Brands', 'brands'))
-  filters.appendChild(generateFiltersSection(models, 'Models', 'models'))
+  // filters.appendChild(generateFiltersSection(models, 'Models', 'models'))
   filters.appendChild(generateFiltersSection(genders, 'Genders', 'genders'))
 }
 
 function generateFiltersSection(items, titleString, key) {
-  let wrapper = newElement('div')
+  let wrapper = newElement('div', null, {class: 'filter-category'})
 
   // add the title
   let title = newElement('h4', titleString)

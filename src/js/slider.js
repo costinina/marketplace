@@ -18,7 +18,7 @@ function getCarouselProducts() {
 
       var slider = tns({
         container: '.carousel',
-        items: 3,
+        items: 4,
         gutter: '15',
         nav: false,
         controlsText: ['', '']
@@ -31,7 +31,7 @@ function populateCarousel(items) {
   for (let i = 0; i < items.length; i++) {
     let item = newElement('div', null, { class: "carousel-item" })
     let link = newElement('a', null, { href: `/product-details.html?productID=${items[i].id}`, class: "card" })
-    let image = newElement('img', null, { src: items[i].image })
+    let image = newElement('img', null, { src: items[i].thumbnail })
     link.appendChild(image);
     item.appendChild(link);
     carouselList.appendChild(item);

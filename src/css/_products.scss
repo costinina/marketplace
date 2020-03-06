@@ -1,6 +1,24 @@
 // Products
+.products-container {
+  padding-top: 0;
+  > .column {
+    padding-top: 0;
+  }
+}
 .filter {
   margin-top: $base-space;
+  .filter-category {
+    margin-bottom: $base-space * 2;
+  }
+  label {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: $base-space/2;
+    padding-top: $base-space/2;
+    padding-bottom: $base-space/2;
+    cursor: pointer;
+  }
 }
 .products-list {
   .card {
@@ -86,5 +104,39 @@
     background-color: $light-grey;
     text-align: left;
     font-weight: bold;
+  }
+}
+.quantity-and-price {
+  margin-bottom: $base-space;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  .price {
+    margin-right: $base-space * 2;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .quantity {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  a,
+  .value {
+    border: 1px solid $grey;
+    border-radius: $border-radius;
+    padding: $base-space/2;
+    display: block;
+    text-align: center;
+  }
+  a {
+    cursor: pointer;
+    width: 30px;
+  }
+  .value {
+    margin-left: $base-space/2;
+    margin-right: $base-space/2;
+    min-width: 90px;
+    display: block;
   }
 }

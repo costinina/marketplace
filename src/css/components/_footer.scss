@@ -3,8 +3,9 @@
   padding-top: $base-space * 2;
   padding-bottom: $base-space * 2;
   .footer-logo {
-      margin-bottom: $base-space;
-      display: block;
+    margin: $base-space;
+    display: block;
+    max-width: 40px;
   }
   .footer-title {
     color: $grey;

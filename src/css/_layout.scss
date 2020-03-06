@@ -21,6 +21,14 @@ a {
     color: $grey;
   }
 }
+::-moz-selection {
+  background: $secondary-color;
+  color: $dark-grey;
+}
+::selection {
+  background: $secondary-color;
+  color: $dark-grey;
+}
 section {
   padding-top: $base-space * 3;
   padding-bottom: $base-space * 3;
@@ -40,7 +48,7 @@ section {
   .sidebar-title {
     font-weight: bold;
     text-transform: uppercase;
-    color: $grey
+    color: $grey;
   }
 }
 %icon {
@@ -51,7 +59,13 @@ section {
   -webkit-font-smoothing: antialiased;
   font-family: "Font Awesome 5 Free";
 }
-
+%imageAnim {
+  transform: scale(1);
+  transition: transform 0.3s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
 // Helpers
 .text-right {
   text-align: right;
@@ -111,37 +125,3 @@ h1:not(:last-child),
 h2:not(:last-child) {
   margin-bottom: $base-space * 2;
 }
-
-// Overight tiny-slider style
-.tns-outer {
-  position: relative;
-}
-.tns-controls button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-  background-color: rgba($dark-grey, 0.8);
-  border: 0;
-  padding: $base-space;
-  &:before {
-    font-size: 20px;
-    color: $light;
-  }
-
-  @extend %icon;
-  &[data-controls="prev"] {
-    left: 0;
-    &:before {
-      content: "\f060";
-    }
-  }
-  &[data-controls="next"] {
-    right: 0;
-    &:before {
-      content: "\f061";
-    }
-  }
-}
-
-

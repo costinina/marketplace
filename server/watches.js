@@ -65,7 +65,7 @@ watchesRoutes.get("/", (req, res) => {
   res.json(watches)
 })
 watchesRoutes.get("/carousel", (req, res) => {
-  res.json(watches.slice(0,6))
+  res.json(watches.slice(0,8))
 })
 
 watchesRoutes.get("/:productId", (req, res) => {

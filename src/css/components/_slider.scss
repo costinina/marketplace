@@ -1,0 +1,43 @@
+.carousel {
+  .card {
+    display: block;
+  }
+  img {
+    height: 15vw;
+    object-fit: cover;
+    width: 100%;
+    @extend %imageAnim;
+  }
+}
+
+// Overight tiny-slider style
+.tns-outer {
+  position: relative;
+}
+.tns-controls button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background-color: rgba($secondary-color, 0.8);
+  border: 0;
+  padding: $base-space;
+  &:before {
+    font-size: 20px;
+    color: $light;
+  }
+
+  @extend %icon;
+  &[data-controls="prev"] {
+    left: 0;
+    &:before {
+      content: "\f060";
+    }
+  }
+  &[data-controls="next"] {
+    right: 0;
+    &:before {
+      content: "\f061";
+    }
+  }
+}

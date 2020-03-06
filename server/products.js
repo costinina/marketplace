@@ -1,10 +1,10 @@
 const Chance = require("chance")
 const express = require("express")
 
-const watchesRoutes = express.Router()
+const productsRoutes = express.Router()
 const chance = new Chance()
 
-const watches = Array.from({ length: 25 }, (_, i) => {
+const products = Array.from({ length: 25 }, (_, i) => {
   const name = chance.pickone([
     "Rolex",
     "Vacheron Constantin",
@@ -61,17 +61,17 @@ const watches = Array.from({ length: 25 }, (_, i) => {
   }
 })
 
-watchesRoutes.get("/", (req, res) => {
-  res.json(watches)
+productsRoutes.get("/", (req, res) => {
+  res.json(products)
 })
-watchesRoutes.get("/carousel", (req, res) => {
-  res.json(watches.slice(0,8))
+productsRoutes.get("/carousel", (req, res) => {
+  res.json(products.slice(0,8))
 })
 
-watchesRoutes.get("/:productId", (req, res) => {
+productsRoutes.get("/:productId", (req, res) => {
   const watchId = req.params.productId
 
-  res.json(watches.find(w => w.id == watchId))
+  res.json(products.find(w => w.id == watchId))
 })
 
-module.exports = watchesRoutes
+module.exports = productsRoutes

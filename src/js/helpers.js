@@ -32,7 +32,7 @@ export function formatCurrency(value) {
 
 // Create words from a camel case string
 export function camelCaseToWords(camelCase) {
-  var result = camelCase.replace( /([A-Z])/g, " $1" );
+  var result = camelCase.replace(/([A-Z])/g, " $1");
   return result.charAt(0).toUpperCase() + result.slice(1).trim()
 }
 

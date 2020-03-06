@@ -1,5 +1,3 @@
-import { IncomingMessage } from "http"
-
 export default function () {
   let items = []
 
@@ -17,7 +15,7 @@ export default function () {
   function getItem(itemID) {
     let item = items.filter(item => item.id === itemID)
 
-    if (typeof item[0] !== 'undefined'){
+    if (typeof item[0] !== 'undefined') {
       return item[0]
     }
 
@@ -27,7 +25,7 @@ export default function () {
   // Add a new item to cart or increase quantity
   function addItem(item, quantity = 1) {
     let existing = getItem(item.id)
-    
+
     if (existing) {
       existing.quantity += quantity
     } else {

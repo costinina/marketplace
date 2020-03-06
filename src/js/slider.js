@@ -4,7 +4,7 @@ import { tns } from '../../node_modules/tiny-slider/src/tiny-slider';
 
 function getCarouselProducts() {
   var loginToken = localStorage.getItem("loginToken");
-  fetch(`${serverUrl}/api/watches/carousel`, {
+  fetch(`${serverUrl}/api/products/carousel`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",

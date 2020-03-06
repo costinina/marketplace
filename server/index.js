@@ -4,8 +4,7 @@ const jwt = require("jsonwebtoken")
 const bodyParser = require("body-parser")
 
 const auth = require("./auth")
-const todos = require("./todos")
-const watches = require("./watches")
+const products = require("./products")
 const authorizedMiddleware = require("./authorized")
 
 const PORT = 3000
@@ -16,8 +15,7 @@ app.use(bodyParser.json())
 app.use(express.static('public'))
 
 app.use("/api/auth", auth)
-app.use("/api/todos", authorizedMiddleware, todos)
-app.use("/api/watches", watches)
+app.use("/api/products", products)
 
 app.listen(PORT, () => {
   console.log(`Server listening on port: ${PORT}`)

@@ -8,7 +8,7 @@ if (productID) {
 // Get the product from the API
 function getProduct(id) {
   var loginToken = localStorage.getItem("loginToken");
-  fetch(`${serverUrl}/api/watches/${id}`, {
+  fetch(`${serverUrl}/api/products/${id}`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
